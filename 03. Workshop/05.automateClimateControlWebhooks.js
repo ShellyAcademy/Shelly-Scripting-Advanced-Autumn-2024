@@ -1,0 +1,1 @@
+// http://192.168.10.232/rpc/Webhook.Create?event=temperature.change&cid=0&enable=true&name=tempChange&urls=["http://192.168.10.235/rpc/Switch.Set?id=0%26on=true"]&condition="ev.tC>22"
