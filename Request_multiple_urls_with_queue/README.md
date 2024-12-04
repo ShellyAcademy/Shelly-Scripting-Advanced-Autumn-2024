@@ -19,5 +19,7 @@ Example `Webhook.Create`:
 }
 ```
 
-where script id should be set to the id of the **running** `request_multiple_urls` script
+where script id should be set to the id of the `request_multiple_urls` script.
+
+*Note:* `request_multiple_urls` script should be **running** in order for the webhook to work.
 
