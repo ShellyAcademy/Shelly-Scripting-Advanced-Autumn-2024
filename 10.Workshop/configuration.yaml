@@ -1,0 +1,20 @@
+shelly@shelly-VirtualBox:/opt/home_assistant/config$ cat configuration.yaml 
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+rest_command:
+  video_playing:
+    url: "http://192.168.10.200/rpc/button.trigger?id=200&event=single_push"
+    content_type: 'application/json'
+  video_pause_stop:
+    url: "http://192.168.10.200/rpc/button.trigger?id=200&event=double_push"
+    content_type: 'application/json'
